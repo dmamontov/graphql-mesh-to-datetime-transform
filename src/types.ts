@@ -27,11 +27,6 @@ export type ToDateTimeWithScalarsTransformConfig = ToDateTimeTransformConfig & {
     scalar: GraphQLScalarType;
 };
 
-export const GoogleProtobufTimestampTypes = [
-    'GoogleProtobufTimestamp',
-    'google__protobuf__Timestamp',
-];
-
 export interface ToDateTimeTransformAlias {
     type: string;
     name: string;
