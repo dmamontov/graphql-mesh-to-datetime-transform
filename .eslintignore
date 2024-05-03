@@ -1,0 +1,6 @@
+tsconfig.json
+.eslintrc
+.prettierrc.cjs
+yarn.lock
+node_modules
+.mesh
