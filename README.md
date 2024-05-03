@@ -65,8 +65,6 @@ transforms:
 
 - **modify**: Allows modification of the time (to add or subtract time).
 
-! This transform does not add directive and extension logic.
-
 ## Conclusion
 
 Remember, always test your configurations in a development environment before applying them in production to ensure that everything works as expected.
