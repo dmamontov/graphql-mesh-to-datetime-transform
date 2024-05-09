@@ -4,7 +4,7 @@ To Datetime Transform - is a transform for GraphQL Mesh that enables you to conv
 
 ## Installation
 
-Before you can use the to-datetime-transform, you need to install it along with GraphQL Mesh if you haven't already done so. You can install these using npm or yarn.
+Before you can use the To Datetime Transform, you need to install it along with GraphQL Mesh if you haven't already done so. You can install these using npm or yarn.
 
 ```bash
 npm install @dmamontov/graphql-mesh-to-datetime-transform
@@ -36,7 +36,7 @@ Add the following paths configuration under the compilerOptions in your tsconfig
 
 ### Adding the Transform to GraphQL Mesh
 
-You need to include the Replace Config Transform in your GraphQL Mesh configuration file (usually .meshrc.yaml). Below is an example configuration that demonstrates how to use this transform:
+You need to include the To Datetime Transform in your GraphQL Mesh configuration file (usually .meshrc.yaml). Below is an example configuration that demonstrates how to use this transform:
 
 ```yaml
 transforms:
