@@ -180,12 +180,19 @@ export default class ToDatetimeTransform implements Transform {
             return value;
         }
 
-        let dateTimeMoment =
+        let dateTimeMoment;
+
+        if (
             type.format.current == DefaultCurrentFormat.GoogleProtobufTimestamp &&
             typeof value === 'object' &&
             value?.seconds
-                ? moment(value.seconds * 1000 + (value.nanos || 0) / 1_000_000)
-                : moment(value);
+        ) {
+            dateTimeMoment = moment(value.seconds * 1000 + (value.nanos || 0) / 1_000_000);
+        } else if (isNaN(Number(value))) {
+            dateTimeMoment = moment(value);
+        } else {
+            dateTimeMoment = moment.unix(Number(value));
+        }
 
         if (type.modify?.includes(' ')) {
             let amount: string | number;
